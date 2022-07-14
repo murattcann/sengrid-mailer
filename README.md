@@ -12,15 +12,12 @@
   <br>
   After publish process edit <i>config\sendgrid_credentials.php</i> file like: <br>
   <code>
- 
-
     return [
         "token" => "your token by sendgrid",
         "from_email" => "from email address",
         "from_name"  => "from name for emails",
         "default_subject" => "Default Email Subject",
     ];
-?>
   </code>
 </p>
 <hr>
