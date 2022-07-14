@@ -1,0 +1,31 @@
+{
+    "name": "murattcann/sendgrid-mailer",
+    "description": "A package to send mails with Sendgrid",
+    "type": "library",
+    "require": {
+        "sendgrid/sendgrid": "^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Murattcann\\SendgridMailer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+                "providers": [
+                    "\\Murattcann\\SendgridMailer\\SendgridMailerServiceProvider"
+                ],
+                "aliases":{
+                    "SendgridSender" : "Murattcann\\SendgridMailer\\SendgridSenderFacade"
+                }
+            }
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Murat CAN",
+            "email": "muratcan.php@gmail.com"
+        }
+    ]
+}
